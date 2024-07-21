@@ -139,7 +139,7 @@
 						<strong>班级</strong><input type="text" id="classBachelor" value="电气与自动化">
 					</li>
 					<li>
-						<strong>届</strong><input type="text" id="yearBachelor" value="2024">
+						<strong>届</strong>2024
 					</li>
 					<li>
 						<strong></strong> 学校
@@ -243,7 +243,7 @@
 		function generateBachelor() {
 			var name = document.getElementById('nameBachelor').value;
 			var major = document.getElementById('majorBachelor').value;
-			var className = document.getElementById('classBachelor').value;
+			
 			
 
 			var content = `
@@ -260,14 +260,13 @@
 		function generateMaster() {
 			var name = document.getElementById('nameMaster').value;
 			var major = document.getElementById('majorMaster').value;
-			var className = document.getElementById('classMaster').value;
-			var year = document.getElementById('yearMaster').value;
+		
 
 			var content = `
 				<h1>应天书院录取通知书</h1>
 				<p>恭喜 <strong>${name}</strong> 同学</p>
-				<p>你已被录取为 <strong>${year}</strong> 届</p>
-				<p><strong>${className}</strong> 班的 <strong>${major}</strong> 专业学生</p>
+				
+				<p> <strong>${major}</strong> 专业学生</p>
 			`;
 
 			document.getElementById('certificateContent').innerHTML = content;
